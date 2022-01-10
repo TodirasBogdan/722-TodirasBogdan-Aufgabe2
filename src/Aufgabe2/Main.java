@@ -1,7 +1,6 @@
 package Aufgabe2;
 
 import controller.Controller;
-import controller.ControllerInterface;
 import model.Produkt;
 import view.View;
 
