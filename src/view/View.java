@@ -2,7 +2,6 @@ package view;
 
 import controller.Controller;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class View {
@@ -58,11 +57,11 @@ public class View {
         }
     }
 
-    private void showAllProdukts(){
+    private void showAllProdukts() {
         System.out.println(controller.getAll());
     }
 
-    private void addProduct(){
+    private void addProduct() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You will need to write a few things that represent Product attributes.");
         System.out.println("Enter Product id:");
@@ -82,14 +81,14 @@ public class View {
     }
 
 
-    private void deleteProdukt(){
+    private void deleteProdukt() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Product id:");
         int id = scanner.nextInt();
         controller.deleteProdukt(id);
     }
 
-    private void updateProduct(){
+    private void updateProduct() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You will need to write a few things that represent Product attributes.");
         System.out.println("Enter Product id:");

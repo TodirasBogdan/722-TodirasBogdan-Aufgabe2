@@ -18,7 +18,6 @@ public class Controller implements ControllerInterface {
     }
 
 
-
     @Override
     public Produkt addProdukt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte) {
         Produkt produkt = new Produkt(id, name, preis, sku, initialeAnzahlVonProdukte);
