@@ -6,11 +6,11 @@ public class Produkt {
 
     private Integer id;
     private String name;
-    private String preis;
+    private Integer preis;
     private String sku;
     private Integer initialeAnzahlVonProdukte;
 
-    public Produkt(Integer id, String name, String preis, String sku, Integer initialeAnzahlVonProdukte) {
+    public Produkt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte) {
         this.id = id;
         this.name = name;
         this.preis = preis;
@@ -34,11 +34,11 @@ public class Produkt {
         this.name = name;
     }
 
-    public String getPreis() {
+    public Integer getPreis() {
         return preis;
     }
 
-    public void setPreis(String preis) {
+    public void setPreis(Integer preis) {
         this.preis = preis;
     }
 

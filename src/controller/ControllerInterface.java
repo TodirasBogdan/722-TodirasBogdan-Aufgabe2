@@ -9,7 +9,7 @@ public interface ControllerInterface {
     /**
      * add ein Produkt
      */
-    Produkt addProdukt(Integer id, String name, String preis, String sku, Integer initialeAnzahlVonProdukte);
+    Produkt addProdukt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte);
 
     /**
      * gibt alle Produkte
@@ -24,7 +24,7 @@ public interface ControllerInterface {
     /**
      * modifiziert ein Produkt
      */
-    void updateProdukt(Integer id, String name, String preis, String sku, Integer initialeAnzahlVonProdukte);
+    void updateProdukt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte);
 
     /**
      * loescht ein Produkt

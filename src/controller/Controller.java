@@ -13,10 +13,6 @@ public class Controller implements ControllerInterface {
         this.produktList = produktList;
     }
 
-    public List<Produkt> getProduktList() {
-        return produktList;
-    }
-
     public void setProduktList(List<Produkt> produktList) {
         this.produktList = produktList;
     }
@@ -24,7 +20,7 @@ public class Controller implements ControllerInterface {
 
 
     @Override
-    public Produkt addProdukt(Integer id, String name, String preis, String sku, Integer initialeAnzahlVonProdukte) {
+    public Produkt addProdukt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte) {
         Produkt produkt = new Produkt(id, name, preis, sku, initialeAnzahlVonProdukte);
         produktList.add(produkt);
         return produkt;
@@ -49,7 +45,7 @@ public class Controller implements ControllerInterface {
 
 
     @Override
-    public void updateProdukt(Integer id, String name, String preis, String sku, Integer initialeAnzahlVonProdukte) {
+    public void updateProdukt(Integer id, String name, Integer preis, String sku, Integer initialeAnzahlVonProdukte) {
         for (Produkt produkt : produktList) {
             if (Objects.equals(produkt.getId(), id)) {
                 produkt.setName(name);
@@ -59,7 +55,6 @@ public class Controller implements ControllerInterface {
             }
         }
     }
-
 
     @Override
     public void deleteProdukt(Integer id) {
